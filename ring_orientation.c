@@ -407,6 +407,7 @@ int main(int argc, char** argv){
 			execute_step5_for_all_neighbors(ring, &ring_node, &neighbor_node_1, neighbor1_rank, &neighbor_node_2, neighbor2_rank, world_size, world_rank);
     	}
    	}
+	
     if (is_repository(world_rank)){
     	printf("[INFO] Main - repo: Final State Of Ring\n");
     	for(i=0; i<world_size-1; i++){
